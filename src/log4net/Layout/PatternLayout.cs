@@ -883,6 +883,9 @@ namespace log4net.Layout
 			s_globalRulesRegistry.Add("F", typeof(FileLocationPatternConverter));
 			s_globalRulesRegistry.Add("file", typeof(FileLocationPatternConverter));
 
+			s_globalRulesRegistry.Add("Fl", typeof(FileLiteLocationPatternConverter));
+			s_globalRulesRegistry.Add("filelite", typeof(FileLiteLocationPatternConverter));
+
 			s_globalRulesRegistry.Add("l", typeof(FullLocationPatternConverter));
 			s_globalRulesRegistry.Add("location", typeof(FullLocationPatternConverter));
 
