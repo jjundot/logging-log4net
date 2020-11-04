@@ -240,7 +240,8 @@ method="run" file="Generator.java" line="94"/>
 				writer.WriteStartElement("log4j:locationInfo");
 				writer.WriteAttributeString("class", locationInfo.ClassName);
 				writer.WriteAttributeString("method", locationInfo.MethodName);
-				writer.WriteAttributeString("file", locationInfo.FileName);
+				//writer.WriteAttributeString("file", locationInfo.FileName);
+				writer.WriteAttributeString("file", Path.GetFileName(locationInfo.FileName));
 				writer.WriteAttributeString("line", locationInfo.LineNumber);
 				writer.WriteEndElement();
 			}
